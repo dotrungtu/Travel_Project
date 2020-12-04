@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ListRoomWasBooked_Activity"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvTitleLichSuDatPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:text="LỊCH SỬ ĐẶT PHÒNG"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_LichSuDatPhong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTitleLichSuDatPhong">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

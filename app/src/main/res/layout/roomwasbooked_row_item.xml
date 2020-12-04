@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:padding="8dp"
+    android:layout_marginBottom="4dp">
+
+
+    <ImageView
+        android:id="@+id/place_imageRoomWasBooked"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/place_hotelNameRoomWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="Tên khách sạn"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/place_imageRoomWasBooked"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_checkInRoomWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Ngày nhận phòng"
+        app:layout_constraintStart_toStartOf="@+id/place_hotelNameRoomWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/place_hotelNameRoomWasBooked" />
+
+    <TextView
+        android:id="@+id/tv_checkOutRoomWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Ngày trả phòng"
+        app:layout_constraintStart_toStartOf="@+id/tv_checkInRoomWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/tv_checkInRoomWasBooked" />
+    <TextView
+        android:id="@+id/tv_BedTypeRoomWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Loại giường"
+        app:layout_constraintStart_toStartOf="@+id/tv_checkOutRoomWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/tv_checkOutRoomWasBooked" />
+
+    <TextView
+        android:id="@+id/priceRoomWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Giá tiền"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/tv_BedTypeRoomWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/tv_BedTypeRoomWasBooked" />
+
+    <TextView
+        android:id="@+id/tv_EmailUserRoomWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textStyle="italic"
+        android:hint="Email"
+        app:layout_constraintStart_toStartOf="@+id/priceRoomWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/priceRoomWasBooked" />
+
+</android.support.constraint.ConstraintLayout>

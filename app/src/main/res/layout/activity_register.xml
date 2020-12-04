@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Register_Activity">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/bg_app"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="CHÀO MỪNG ĐẾN VỚI TRAVEL APP"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title_Register"
+        android:text="ĐĂNG KÝ THÀNH VIÊN"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/emailTIL"
+        android:layout_below="@+id/title_Register">
+        <EditText
+            android:id="@+id/edt_EmailForRegister"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/passwordTIL"
+        android:layout_below="@id/emailTIL"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/edt_PasswordForRegister"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/nameTIL"
+        android:layout_below="@id/passwordTIL">
+        <EditText
+            android:id="@+id/edt_NameForRegister"
+            android:inputType="textPersonName"
+            android:hint="Tên người dùng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/phoneNumberTIL"
+        android:layout_below="@id/nameTIL">
+        <EditText
+            android:id="@+id/edt_PhoneNumberForRegister"
+            android:inputType="phone"
+            android:hint="Số điện thoại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/addressTIL"
+        android:layout_below="@id/phoneNumberTIL">
+        <EditText
+            android:id="@+id/edt_AddressForRegister"
+            android:inputType="text"
+            android:hint="Địa chỉ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_ForRegister"
+        android:text="ĐĂNG KÝ"
+        android:textStyle="normal"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/addressTIL"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_HaveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã có tài khoản? Nhấn vào đây để đăng nhập"
+        android:textAlignment="center"
+        android:layout_below="@id/btn_ForRegister"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
+</ScrollView>

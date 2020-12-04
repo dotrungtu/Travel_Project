@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BookTourCity_Activity">
+
+        <ImageView
+            android:id="@+id/imageView3_BookTour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textView6_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3_BookTour" />
+
+        <ImageView
+            android:id="@+id/imageView5_BookTour"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6_BookTour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView6_BookTour"
+            />
+
+        <TextView
+            android:id="@+id/textView7_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:hint="Email"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3_BookTour"
+            app:layout_constraintRight_toRightOf="@+id/imageView3_BookTour"
+
+            />
+
+        <TextView
+            android:id="@+id/textView8_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ngày khởi hành :"
+            android:textColor="#044363"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@+id/textView6_BookTour"
+            app:layout_constraintTop_toBottomOf="@+id/textView6_BookTour" />
+
+        <TextView
+            android:id="@+id/textView9_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Giá dao động từ: "
+            android:textColor="#044363"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@+id/textView8_BookTour"
+            app:layout_constraintTop_toBottomOf="@+id/textView8_BookTour" />
+
+        <TextView
+            android:id="@+id/textView10_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#FF0000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8_BookTour"
+            app:layout_constraintStart_toEndOf="@+id/textView8_BookTour"
+            app:layout_constraintTop_toTopOf="@+id/textView8_BookTour" />
+
+        <TextView
+            android:id="@+id/textView12_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hình Ảnh"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="@+id/textView9_BookTour"
+            app:layout_constraintTop_toBottomOf="@+id/textView9_BookTour" />
+
+        <TextView
+            android:id="@+id/textView11_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#FF0000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9_BookTour"
+            app:layout_constraintStart_toEndOf="@+id/textView9_BookTour"
+            app:layout_constraintTop_toTopOf="@+id/textView9_BookTour" />
+
+        <ImageView
+            android:id="@+id/imageView8_BookTour"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12_BookTour" />
+
+        <ImageView
+            android:id="@+id/imageView9_BookTour"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8_BookTour"
+            app:layout_constraintStart_toEndOf="@+id/imageView8_BookTour"
+            app:layout_constraintTop_toTopOf="@+id/imageView8_BookTour"
+            />
+
+        <ImageView
+            android:id="@+id/imageView10_BookTour"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9_BookTour"
+            app:layout_constraintStart_toEndOf="@+id/imageView9_BookTour"
+            app:layout_constraintTop_toTopOf="@+id/imageView9_BookTour"
+            />
+
+        <ImageView
+            android:id="@+id/imageView11_BookTour"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/button_BookTour"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="ĐẶT TOUR"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11_BookTour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView11_BookTour"
+            app:layout_constraintTop_toTopOf="@+id/imageView11_BookTour" />
+
+        <TextView
+            android:id="@+id/textView13_BookTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Thông tin chuyến đi:"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8_BookTour" />
+
+        <TextView
+            android:id="@+id/textView14_BookTour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_BookTour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView13_BookTour"
+            app:layout_constraintTop_toBottomOf="@+id/textView13_BookTour" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F7">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutBooking"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textViewBooking1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:hint="Tên"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewBooking2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Địa chỉ email"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewBooking1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBooking1" />
+
+        <ImageView
+            android:id="@+id/iv_ImageUserBooking"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtSearchBooking"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:hint="Tìm khu vực"
+            android:textColor="#62878F"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/textViewBooking2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBooking2" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDanhSachPhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Chọn khu vực"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutBooking" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/citybookingroom_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDanhSachPhong" />
+</android.support.constraint.ConstraintLayout>

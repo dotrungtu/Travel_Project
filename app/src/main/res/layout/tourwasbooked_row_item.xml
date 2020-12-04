@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:padding="8dp"
+    android:layout_marginBottom="4dp">
+
+
+    <ImageView
+        android:id="@+id/place_imageWasBooked"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/place_nameWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="Tên thành phố"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/place_imageWasBooked"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/country_nameWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Tên nước"
+        app:layout_constraintStart_toStartOf="@+id/place_nameWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/place_nameWasBooked" />
+
+    <TextView
+        android:id="@+id/tv_checkInWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Ngày khởi hành"
+        app:layout_constraintStart_toStartOf="@+id/country_nameWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/country_nameWasBooked" />
+
+    <TextView
+        android:id="@+id/priceWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Giá tiền"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/tv_checkInWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/tv_checkInWasBooked" />
+
+    <TextView
+        android:id="@+id/tv_EmailUserWasBooked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textStyle="italic"
+        android:hint="Email"
+        app:layout_constraintStart_toStartOf="@+id/priceWasBooked"
+        app:layout_constraintTop_toBottomOf="@+id/priceWasBooked" />
+
+</android.support.constraint.ConstraintLayout>
